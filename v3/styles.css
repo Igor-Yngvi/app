@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fcd549; /* Amarelo */
+  position: relative; /* Permite que os elementos de decoração fiquem posicionados corretamente */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 40px; /* Aumentamos um pouco o padding para aumentar o "container" */
+  width: 560px; /* Aumentamos a largura para ocupar uma área maior */
+}
+
+.left-panel {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.right-panel {
+  flex: 1;
+}
+
+h2 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.background-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Colocamos os elementos de decoração no fundo */
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #fff; /* Branco */
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.8; /* Reduzimos a opacidade para dar um efeito suave */
+}
+
+/* Posicionamento aleatório dos círculos brancos */
+.circle1 {
+  top: 80px;
+  left: 100px;
+}
+
+.circle2 {
+  top: 150px;
+  right: 120px;
+}
+
+/* Adicione mais posicionamentos conforme desejar */
+
+/* Elemento de decoração de linha */
+.decoration-line {
+  width: 100%;
+  height: 1px;
+  background-color: #fff; /* Branco */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}

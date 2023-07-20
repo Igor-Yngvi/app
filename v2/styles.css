@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  position: relative; /* Permite que os círculos fiquem posicionados corretamente */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 480px; /* Aumentamos um pouco a largura para acomodar os elementos */
+}
+
+.left-panel {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.right-panel {
+  flex: 1;
+}
+
+h2 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.background-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Colocamos os círculos no fundo */
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #fcd549; /* Amarelo */
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle1 {
+  top: 80px;
+  left: 100px;
+}
+
+.circle2 {
+  top: 150px;
+  right: 120px;
+}
+
+.circle3 {
+  bottom: 80px;
+  left: 180px;
+}
